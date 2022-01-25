@@ -1,7 +1,11 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import useFirebase from "./hooks/useFirebase";
 
 function App() {
+
+  const firebase = useFirebase();
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +21,11 @@ function App() {
         >
           Learn React
         </a>
+        {firebase && 
+        <>
+          useFirebase hook is working!
+        </>
+      }
       </header>
     </div>
   );
