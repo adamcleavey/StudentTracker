@@ -37,7 +37,7 @@
       "enabled": true
     },
     "hosting": {
-      "port": 5000
+      "port": 9000
     }
   }
 }
